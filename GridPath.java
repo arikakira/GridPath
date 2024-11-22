@@ -6,6 +6,17 @@ public class GridPath {
         grid = values;
     }
 
+    public String toString() {
+        String s = "";
+        for(int[] row:grid) {
+            for(int col:row) {
+                s += col + " ";
+            }
+            s += "\n";
+        }
+        return s;
+    }
+
     /**
      * Returns the Location representing a neighbor of the grid element at row and
      * col,
@@ -16,7 +27,9 @@ public class GridPath {
      * grid.
      */
     public Location getNextLoc(int row, int col) {
-        return null; }
+        int below = grid[row + 1][col];
+        int right = grid[row][col + 1];
+    }
 
     /**
      * Computes and returns the sum of all values on a path through grid, as
