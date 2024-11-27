@@ -9,5 +9,8 @@ public class Main {
         };
         GridPath one = new GridPath(nums);
         System.out.println(one);
+        System.out.println(one.getNextLoc(1,3));
+        System.out.println(one.getNextLoc(2,4));
+        System.out.println(one.getNextLoc(4,3));
     }
 }
